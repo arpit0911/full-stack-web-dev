@@ -1,0 +1,33 @@
+.smiley_face {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-color: yellow;
+  position: relative;
+  border-radius: 50%;
+}
+.eye {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2.5px solid;
+  top: 55px;
+  border-radius: 50%;
+  background-color: black;
+}
+.left {
+  left: 30px;
+}
+.right {
+  right: 30px;
+}
+.mouth {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  bottom: 45px;
+  left: 50px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: red;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Collection</title>
+  </head>
+  <body>
+    <!-- headings -->
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+    <!-- paragraphs -->
+
+    <p>This is the paragraph</p>
+    <br /><br />
+    <hr />
+    <!-- Ordered List -->
+    <ol>
+      <li>orange</li>
+      <li>Banana</li>
+      <li>Apple</li>
+      <li>Grapes</li>
+    </ol>
+    <!-- Unordered List -->
+    <ul>
+      <li>
+        ram
+        <a
+          href="https://m.media-amazon.com/images/I/71ckb5HPaIL._AC_UF1000,1000_QL80_.jpg"
+          >see</a
+        >
+      </li>
+      <li>rocky</li>
+      <li>raj</li>
+      <li>ravish</li>
+    </ul>
+    <br /><br />
+    <hr />
+    <!-- anchor tags -->
+    <a href="https://www.youtube.com/">You Tube</a>
+    <a href="https://www.netflix.com/browse">Netflix</a>
+    <!-- image tag -->
+    <img
+      src="./asset/food.jpg"
+      alt="chilli potato"
+      width="300px"
+      height="300px"
+    />
+    <img
+      src="https://cdn.britannica.com/30/182830-050-96F2ED76/Chris-Evans-title-character-Joe-Johnston-Captain.jpg"
+      alt="captain america"
+      width="300px"
+      height="300px"
+    />
+    <br /><br />
+    <hr />
+    <!-- break bold italic underline -->
+    <p>
+      <b>Twinkle Twinkle</b><br />little <i>star</i> <br />how i wonder
+      <br />what you are
+    </p>
+    <header>Header tag</header>
+    <footer>Footer tag</footer>
+    <section>Section tag</section>
+    <main>Main tag</main>
+    <nav>Nav tag</nav>
+
+    <!--* HTML Entities -->
+    <!-- *starts with & and ends with ;
+        *for space = &nbsp; -> non breaking space
+        *for less then (<) =  &lt; -> less then
+        *for greater then (>) =  &gt; -> greater then
+    -->
+    <p>My name is Arpit &nbsp;&nbsp;&nbsp; 80 &lt; age &gt; 10 &hearts;</p>
+    <br /><br />
+    <hr />
+    <!-- table -->
+    <table border="black">
+      <!-- ! border here not recommended-->
+      <!-- rowspan and colspan used to specify the number of row
+        or number of col to be occupied by a shell -->
+      <caption>
+        Food menu
+      </caption>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frooti</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>samosa</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>chips</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>sum</td>
+          <td>sum</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- practice question 7 -->
+    <table border="black">
+      <caption>
+        A test with merged cells
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2">Average</th>
+          <th rowspan="2">Red eyes</th>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Males</td>
+          <td>1.9</td>
+          <td>0.003</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>Females</td>
+          <td>1.9</td>
+          <td>0.002</td>
+          <td>43%</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+    <hr />
+    <!-- form -->
+    <form action="/server">
+      <label for="user_name">username</label>
+      <input type="text" name="username" id="user_name" /><br />
+      <label for="phone_number">Phone Number</label>
+      <input type="number" name="phoneNumber" id="phone_number" /><br />
+      <label for="subject">PCM</label>
+      <input type="checkbox" name="subject" id="subject" checked /><br />
+      <label for="commerce">Commerce</label>
+      <input type="checkbox" name="commerce" id="commerce" /><br />
+      <label for="biology">Biology</label>
+      <input type="checkbox" name="biology" id="biology" /><br />
+      <label for="pizza">Pizza</label>
+      <input type="radio" name="dish" id="pizza" />
+      <label for="burger">Burger</label>
+      <input type="radio" name="dish" id="burger" />
+      <label for="golgappe">Golgappe</label>
+      <input type="radio" name="dish" id="golgappe" checked /><br />
+      <label for="color">Color</label>
+      <input type="color" name="color" id="color" /> <br />
+      <select name="city" id="city">
+        <option value="lucknow">lucknow</option>
+        <option value="bangalore">bangalore</option>
+        <option value="Delhi">Delhi</option></select
+      ><br />
+      <label for="volume">Volume</label>
+      <input
+        type="range"
+        name="volume"
+        id="volume"
+        min="0"
+        max="100"
+        step="10"
+      /><br />
+      <label for="comments">Comments</label>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

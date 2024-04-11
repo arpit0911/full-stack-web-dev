@@ -1,0 +1,83 @@
+/* * universal selector */
+* {
+  font-family: "Courier New";
+}
+/* *element selector */
+h3 {
+  color: purple;
+}
+h1 {
+  color: #b92b27;
+}
+
+/* *id selector */
+#login {
+  background-color: white;
+}
+#signup {
+  background-color: #b92b27;
+  color: white;
+}
+
+/* * class selector */
+.upvote {
+  color: white;
+  background-color: green;
+}
+.answer {
+  color: white;
+  background-color: blue;
+}
+/* *descendant selector  */
+p a {
+  color: blue;
+  text-decoration: none;
+}
+/* *adjacent sibling combinator */
+p + h3 {
+  text-decoration: underline;
+}
+.upvote + button {
+  background-color: brown;
+}
+/* * child combinator */
+div > input {
+  background-color: lightgray;
+}
+
+/* * attribute selector */
+input[type="text"] {
+  color: green;
+}
+
+input[type="password"] {
+  color: red;
+}
+/* * pseudo class */
+/* ! :hover, :active, :checked, :nth-of-type  */
+
+button:hover {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 3px;
+}
+/* * pseudo elements */
+/* ::first-letter, ::first-line, ::selection */
+h1::first-letter {
+  color: green;
+  font-size: 3rem;
+}
+/* change selection color for whole page */
+*::selection {
+  background-color: lightgreen;
+}
+/* * cascading properties  states that style comes later is applied  */
+/* * specificity * more clearly you select the specific element more is the specificity
+    ! id > (class, attribute & pseudo-class) > (element & pseudo-element)
+*/
+/* ! !important is used to put hight priority to the css */
+
+/* * Inheritance  CSS*/
+/* child element inherit the parent style if not specified a style to child */
+/* some elements do not inherit by default like input, button */

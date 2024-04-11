@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Simon Game</h1>
+        <h3 id="level-board">Press any key to start the game</h3>
+      </div>
+      <div class="container">
+        <div class="line-one">
+          <div id="red" class="box red" type="button"></div>
+          <div id="green" class="box green" type="button"></div>
+        </div>
+        <div class="line-two">
+          <div id="blue" class="box blue" type="button"></div>
+          <div id="yellow" class="box yellow" type="button"></div>
+        </div>
+      </div>
+      <!-- <button id="start-btn" class="rainbow rainbow-5">Start</button> -->
+      <button id="start-btn" class="btn rainbow-btn">Start</button>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

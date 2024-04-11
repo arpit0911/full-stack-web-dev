@@ -1,0 +1,96 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  background-color: #222831;
+  color: #eeeeee;
+  height: 100dvh;
+}
+.red {
+  background-color: #ff204e;
+}
+.green {
+  background-color: #36ae7c;
+}
+.blue {
+  background-color: #187498;
+}
+.yellow {
+  background-color: #f9d923;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.box {
+  width: 8rem;
+  height: 6rem;
+  border: 0.5rem solid #31363f;
+  border-radius: 1rem;
+  margin: 0.75rem;
+}
+
+.game-flash {
+  border-color: #fbf3d5;
+}
+.player-flash {
+  background-color: #5eda3f;
+}
+
+h3 {
+  margin: 2rem 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  letter-spacing: 0.55rem;
+  font-weight: 600;
+  background-color: #343a40;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: not-allowed;
+}
+.rainbow-btn {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(
+    to right,
+    #e7484f,
+    #e7484f 16.65%,
+    #f68b1d 16.65%,
+    #f68b1d 33.3%,
+    #fced00 33.3%,
+    #fced00 49.95%,
+    #009e4f 49.95%,
+    #009e4f 66.6%,
+    #00aac3 66.6%,
+    #00aac3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #e7484f 100%
+  );
+  animation: slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
