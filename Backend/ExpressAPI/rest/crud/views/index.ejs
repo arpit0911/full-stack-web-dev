@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>All Posts</title>
+  </head>
+  <body>
+    <h1>Comments</h1>
+    <% for (const post of posts) { %>
+    <div class="post">
+      <h4 class="user">@ <%= post.user %></h4>
+      <h5 class="comment"><%= post.comment %></h5>
+    </div>
+    <% } %>
+  </body>
+</html>
